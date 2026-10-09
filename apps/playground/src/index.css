@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "../../../packages/react/src/styles/theme.css";
+@source "../../../packages/react/src";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: var(--acp-bg);
+  color: var(--acp-fg);
+  font-family: var(--acp-font-sans);
+}

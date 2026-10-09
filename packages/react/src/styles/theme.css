@@ -1,0 +1,7 @@
+/*
+ * Tailwind CSS v4 entry: `@import "@acp-render/react/theme.css";` after `@import "tailwindcss";`.
+ * Registers acp-* color tokens and scans the compiled components for class names.
+ */
+@import "./tokens.css";
+@import "./tailwind.css";
+@source "../../dist";

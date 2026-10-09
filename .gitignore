@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output and generated registry
+dist/
+coverage/
+*.tsbuildinfo
+/apps/playground/public/r/
+
+# Tool caches
+.vite/
+.turbo/
+.eslintcache
+.prettiercache
+
+# Local environment and credentials (keep safe example templates)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Logs
+*.log
+
+# OS and local editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

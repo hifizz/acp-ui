@@ -1,0 +1,65 @@
+{
+  "name": "@acp-render/react",
+  "version": "0.1.0",
+  "description": "React components for rendering Agent Client Protocol (ACP) sessions: timeline, streaming markdown, tool calls, diffs, plans, permissions and composer.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifizz/acp-render.git",
+    "directory": "packages/react"
+  },
+  "keywords": [
+    "acp",
+    "agent-client-protocol",
+    "react",
+    "agent",
+    "chat",
+    "tailwind",
+    "shadcn"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./theme.css": "./src/styles/theme.css",
+    "./tokens.css": "./src/styles/tokens.css",
+    "./tailwind-preset": {
+      "types": "./dist/tailwind-preset.d.ts",
+      "import": "./dist/tailwind-preset.js"
+    },
+    "./tailwind.css": "./src/styles/tailwind.css"
+  },
+  "files": [
+    "dist",
+    "src/styles"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@acp-render/core": "workspace:*",
+    "clsx": "2.1.1",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "tailwind-merge": "3.7.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.2",
+    "react-dom": ">=18.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tsup": "8.5.1"
+  }
+}

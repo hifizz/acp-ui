@@ -1,0 +1,79 @@
+/* acp-render design tokens. Override any variable on .acp-root or an ancestor. */
+.acp-root,
+[data-acp-theme="dark"] {
+  --acp-bg: #0d0d0e;
+  --acp-surface: #151517;
+  --acp-surface-2: #1c1c1f;
+  --acp-hover: #232327;
+  --acp-border: #26262a;
+  --acp-border-strong: #34343a;
+  --acp-fg: #e7e7ea;
+  --acp-muted: #9a9aa2;
+  --acp-subtle: #6b6b73;
+  --acp-accent: #7aa2f7;
+  --acp-success: #4ade80;
+  --acp-danger: #f87171;
+  --acp-warning: #fbbf24;
+  --acp-add: #3fb950;
+  --acp-add-bg: rgb(63 185 80 / 0.12);
+  --acp-del: #f85149;
+  --acp-del-bg: rgb(248 81 73 / 0.12);
+  --acp-code-bg: #111113;
+  --acp-radius: 10px;
+  --acp-font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --acp-font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+.acp-root {
+  font-family: var(--acp-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-acp-theme="light"],
+.acp-root[data-acp-theme="light"] {
+  --acp-bg: #ffffff;
+  --acp-surface: #f7f7f8;
+  --acp-surface-2: #efeff1;
+  --acp-hover: #e9e9ec;
+  --acp-border: #e4e4e7;
+  --acp-border-strong: #d4d4d8;
+  --acp-fg: #18181b;
+  --acp-muted: #52525b;
+  --acp-subtle: #a1a1aa;
+  --acp-accent: #2563eb;
+  --acp-success: #16a34a;
+  --acp-danger: #dc2626;
+  --acp-warning: #d97706;
+  --acp-add: #1a7f37;
+  --acp-add-bg: rgb(26 127 55 / 0.1);
+  --acp-del: #cf222e;
+  --acp-del-bg: rgb(207 34 46 / 0.1);
+  --acp-code-bg: #f4f4f5;
+  color-scheme: light;
+}
+
+.acp-mono {
+  font-family: var(--acp-font-mono);
+  font-variant-ligatures: none;
+  font-feature-settings:
+    "liga" 0,
+    "calt" 0;
+}
+
+@keyframes acp-caret {
+  50% {
+    opacity: 0;
+  }
+}
+.acp-caret::after {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  background: currentColor;
+  opacity: 0.7;
+  animation: acp-caret 1s steps(1) infinite;
+}

@@ -1,0 +1,185 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acp-render",
+  "homepage": "https://github.com/hifizz/acp-render",
+  "items": [
+    {
+      "name": "acp-theme",
+      "type": "registry:item",
+      "title": "acp-render theme tokens",
+      "description": "CSS variables used by acp-render components. Import the copied file and register the acp-* colors in your Tailwind theme.",
+      "files": [
+        {
+          "path": "packages/react/src/styles/tokens.css",
+          "type": "registry:file",
+          "target": "styles/acp-render-tokens.css"
+        },
+        {
+          "path": "packages/react/src/styles/tailwind.css",
+          "type": "registry:file",
+          "target": "styles/acp-render-tailwind.css"
+        }
+      ]
+    },
+    {
+      "name": "acp-timeline",
+      "type": "registry:block",
+      "title": "ACP timeline",
+      "description": "Full ACP session timeline: messages, streaming markdown, reasoning, tool calls, tool groups, plans, permissions, changed files, turn folds, composer.",
+      "dependencies": [
+        "@acp-render/core",
+        "clsx",
+        "tailwind-merge",
+        "react-markdown",
+        "remark-gfm"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "packages/react/src/components/changed-files.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/changed-files.tsx"
+        },
+        {
+          "path": "packages/react/src/components/cn.ts",
+          "type": "registry:lib",
+          "target": "components/acp-render/cn.ts"
+        },
+        {
+          "path": "packages/react/src/components/composer.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/composer.tsx"
+        },
+        {
+          "path": "packages/react/src/components/content-blocks.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/content-blocks.tsx"
+        },
+        {
+          "path": "packages/react/src/components/context-meter.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/context-meter.tsx"
+        },
+        {
+          "path": "packages/react/src/components/diff-view.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/diff-view.tsx"
+        },
+        {
+          "path": "packages/react/src/components/icons.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/icons.tsx"
+        },
+        {
+          "path": "packages/react/src/components/markdown-renderer.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/markdown-renderer.tsx"
+        },
+        {
+          "path": "packages/react/src/components/markdown.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/markdown.tsx"
+        },
+        {
+          "path": "packages/react/src/components/messages.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/messages.tsx"
+        },
+        {
+          "path": "packages/react/src/components/permission-prompt.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/permission-prompt.tsx"
+        },
+        {
+          "path": "packages/react/src/components/plan-card.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/plan-card.tsx"
+        },
+        {
+          "path": "packages/react/src/components/reasoning.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/reasoning.tsx"
+        },
+        {
+          "path": "packages/react/src/components/status.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/status.tsx"
+        },
+        {
+          "path": "packages/react/src/components/terminal-output.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/terminal-output.tsx"
+        },
+        {
+          "path": "packages/react/src/components/thread-context.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/thread-context.tsx"
+        },
+        {
+          "path": "packages/react/src/components/timeline.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/timeline.tsx"
+        },
+        {
+          "path": "packages/react/src/components/tool-call.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/tool-call.tsx"
+        },
+        {
+          "path": "packages/react/src/components/tool-group.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/tool-group.tsx"
+        },
+        {
+          "path": "packages/react/src/components/turn-fold.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/turn-fold.tsx"
+        },
+        {
+          "path": "packages/react/src/components/use-stick-to-bottom.ts",
+          "type": "registry:hook",
+          "target": "components/acp-render/use-stick-to-bottom.ts"
+        },
+        {
+          "path": "packages/react/src/styles/tokens.css",
+          "type": "registry:file",
+          "target": "styles/acp-render-tokens.css"
+        },
+        {
+          "path": "packages/react/src/styles/tailwind.css",
+          "type": "registry:file",
+          "target": "styles/acp-render-tailwind.css"
+        }
+      ]
+    },
+    {
+      "name": "acp-composer",
+      "type": "registry:component",
+      "title": "ACP composer",
+      "description": "Prompt composer with IME-safe Enter, slash commands, stop button and context meter.",
+      "dependencies": ["@acp-render/core", "clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "packages/react/src/components/cn.ts",
+          "type": "registry:lib",
+          "target": "components/acp-render/cn.ts"
+        },
+        {
+          "path": "packages/react/src/components/icons.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/icons.tsx"
+        },
+        {
+          "path": "packages/react/src/components/composer.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/composer.tsx"
+        },
+        {
+          "path": "packages/react/src/components/context-meter.tsx",
+          "type": "registry:component",
+          "target": "components/acp-render/context-meter.tsx"
+        }
+      ]
+    }
+  ]
+}

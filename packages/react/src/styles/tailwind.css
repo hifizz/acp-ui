@@ -1,0 +1,24 @@
+/* Maps acp-render CSS variables to Tailwind v4 theme tokens (bg-acp-surface, text-acp-muted, …). */
+@theme inline {
+  --color-acp-bg: var(--acp-bg);
+  --color-acp-surface: var(--acp-surface);
+  --color-acp-surface-2: var(--acp-surface-2);
+  --color-acp-hover: var(--acp-hover);
+  --color-acp-border: var(--acp-border);
+  --color-acp-border-strong: var(--acp-border-strong);
+  --color-acp-fg: var(--acp-fg);
+  --color-acp-muted: var(--acp-muted);
+  --color-acp-subtle: var(--acp-subtle);
+  --color-acp-accent: var(--acp-accent);
+  --color-acp-success: var(--acp-success);
+  --color-acp-danger: var(--acp-danger);
+  --color-acp-warning: var(--acp-warning);
+  --color-acp-add: var(--acp-add);
+  --color-acp-add-bg: var(--acp-add-bg);
+  --color-acp-del: var(--acp-del);
+  --color-acp-del-bg: var(--acp-del-bg);
+  --color-acp-code-bg: var(--acp-code-bg);
+  --radius-acp: var(--acp-radius);
+  --font-acp-sans: var(--acp-font-sans);
+  --font-acp-mono: var(--acp-font-mono);
+}
